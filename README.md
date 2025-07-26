@@ -1,4 +1,4 @@
-# 🌍 Location Finder Web App
+# Location Finder Web App
 
 An animated and responsive web application that detects your current location using the **Geolocation API** and displays it on an interactive **OpenStreetMap** using **Leaflet.js**.
 
@@ -16,7 +16,7 @@ An animated and responsive web application that detects your current location us
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Maps:** [Leaflet.js](https://leafletjs.com) + [OpenStreetMap](https://www.openstreetmap.org)
