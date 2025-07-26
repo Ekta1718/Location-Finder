@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+#output {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #222;
+}
+
+#map {
+  height: 400px;
+  width: 80%;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  border: 3px solid #444;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+#map.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  display: block;
+}
